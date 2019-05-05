@@ -1,17 +1,23 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
+    <Header text= 'List of Countries'/>
+    <router-view id="mapid"></router-view>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import CountriesList from './components/CountriesList.vue'
+// import CountryDetail from './components/CountryDetail.vue'
+// import CountryListItem from './components/CountryListItem.vue'
+import Header from './components/Header.vue'
+
+
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    Header
   }
 }
 </script>
@@ -21,8 +27,9 @@ export default {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  text-align: left;
   color: #2c3e50;
   margin-top: 60px;
+  margin-left: 80px;
 }
 </style>
